@@ -13,5 +13,6 @@
 }
 
 .plans-container--slider {
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 870px;
 }

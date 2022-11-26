@@ -296,11 +296,14 @@ main .backgroundImg {
 
 .product-detail--batata-logo {
     position: absolute;
-    top: -1rem;
-    left: calc(50% - 2rem);
-    width: 4rem;
-    height: 2.5rem;
-    background-image: url('/assets/imgs/logoReverse.svg');
+    top: -1.5rem;
+    left: calc(50% - 3rem);
+    width: 6rem;
+    height: 3rem;
+    background-image: url(/assets/imgs/logoReverse.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-detail--title {
@@ -342,8 +345,8 @@ main .backgroundImg {
 
 .product-detail--card .product-card--icon {
     display: inline-block;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
     margin-bottom: 0.8rem;
     background-size: cover;
     background-position: center;
@@ -394,7 +397,7 @@ main .backgroundImg {
 
 .bitcoin-img-container h2 {
     padding-top: 6rem;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--white);
@@ -565,12 +568,19 @@ footer .right img {
     height: 4rem;
 }
 
-@media (min-width:760px) {
+@media (min-width:759px) {
     header {
         height: 280px;
     }
 
     .header--title-container .header--button {
         top: 221px;
+    }
+
+    .bitcoin-img-container h2 {
+        position: relative;
+        top: calc(50%);
+        padding: 0;
+        font-size: 3rem;
     }
 }
